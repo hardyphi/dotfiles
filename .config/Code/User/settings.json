@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.darkWorkbench": "high-contrast",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "window.zoomLevel": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  "editor.rulers": [80, 120],
+  "editor.fontSize": 12,
+  "eslint.alwaysShowStatus": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.tabSize": 2
+}
