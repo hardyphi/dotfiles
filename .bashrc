@@ -140,3 +140,4 @@ source /usr/share/nvm/init-nvm.sh
 alias dtf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dft='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias vi=nvim
