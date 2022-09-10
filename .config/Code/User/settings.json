@@ -1,8 +1,9 @@
 {
   "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.list.automaticKeyboardNavigation": false,
   "gruvboxMaterial.darkWorkbench": "high-contrast",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/vscode.vim",
   "window.zoomLevel": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
