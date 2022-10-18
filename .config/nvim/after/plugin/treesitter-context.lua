@@ -37,5 +37,5 @@ end
 
 nnoremap("<leader>cf", function() ContextSetup(true) end)
 nnoremap("<leader>cp", function() ContextSetup(false) end)
-ContextSetup(false)
+ContextSetup(true)
 
