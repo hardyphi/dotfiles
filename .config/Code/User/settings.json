@@ -15,5 +15,6 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.stickyScroll.enabled": true
 }
