@@ -36,4 +36,3 @@ vim.opt.wildmenu = true
 vim.opt.wildmode = "longest,list,full"
 
 vim.opt.colorcolumn = "80"
-
