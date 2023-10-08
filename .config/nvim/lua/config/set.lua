@@ -37,5 +37,3 @@ vim.opt.wildmode = "longest,list,full"
 
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "
-
