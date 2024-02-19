@@ -4,7 +4,7 @@
 
 - install Neovim
 - install prettierd using `pnpm | npm install -g @fsouza/prettierd`
-- install ripgrep `sudo pacman -S ripgrepo`
+- install ripgrep `sudo pacman -S ripgrep`
 - system that displays terminal needs a [nerd font](https://www.nerdfonts.com/) (go to is hack)
 
 ## What's happening?
