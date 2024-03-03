@@ -1,25 +1,27 @@
-# My DotFiles Repo
+# my dotfiles repo
 
-Once setup using dtf alias in place of git while in $HOME directory should do the trick.
+my dotfiles, can be managed into the base of an environment using GNU Stow
 
-## Setup
+## requirements
 
-```bash
-git clone --bare $REPO $HOME/.dotfiles
-git --git-dir=$HOME/.dotfiles/ config --local status.showUntrackedFiles no
-```
-To use dtf alias may need to reload your fish.config or .bashrc
-```bash
-. ~/.bashrc
-. ~/.config/fish/config.fish
-```
+neovim
+stow
+fish
 
-## Explanation
+## setup
 
-A bare git repository is setup in $HOME/.dotfiles
-To add files from $HOME to the repo you would use;
-```bash
-git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add /path/to/.dotfile
-```
-Instead an alias of `dtf` is setup to call `git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME` making it much simpler to interact with the repo
+clone the repo in home directory:
+`git clone https://github.com/hardyphi/dotfiles.git`
 
+use stow from /dotfiles:
+`stow --adopt .`
+
+clear all the changes that stow --adopt makes and go back to default config
+`git restore`
+
+ideally it's now all working
+
+###
+
+this setup was previously done with a bare git repo and some funky aliasing but
+this seems to be a bit cleaner although requires an extra package to work.
