@@ -4,11 +4,14 @@ my dotfiles, can be managed into the base of an environment using GNU Stow
 
 ## requirements
 
-neovim
 stow
 fish
+neovim
+ripgrep
 
 ## setup
+
+### get repo
 
 clone the repo in home directory:
 `git clone https://github.com/hardyphi/dotfiles.git`
@@ -20,6 +23,16 @@ clear all the changes that stow --adopt makes and go back to default config
 `git restore`
 
 ideally it's now all working
+
+### setup shell
+
+change to fish as default shell
+```
+echo /usr/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/bin/fish
+```
+
+
 
 ###
 
