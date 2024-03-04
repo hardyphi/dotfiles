@@ -1,11 +1,15 @@
 " vim settings
 set scrolloff=8
+set sidescrolloff=5
 set history=1000
 set number
 set relativenumber
 
 " status bar
 set showmode
+set showcmd
+set visualbell
+
 
 " leader
 map <space> <nop>
@@ -25,9 +29,6 @@ set ideajoin
 set ideamarks
 set idearefactormode=normal
 set ideastatusicon=gray
-
-" better escape
-imap jk <Esc>
 
 " location
 nmap <C-i> <Action>(Back)
@@ -90,17 +91,17 @@ nmap <leader>mt <Action>(EditorTabPopupMenu)
 nmap <leader>mw <Action>(ToolWindowsGroup)
 
 " file
-nmap <leader>of <Action>(OpenFile)
-nmap <leader>yp <Action>(CopyAbsolutePath)
-nmap <leader>rf <Action>(RecentFiles)
-nmap <leader>rl <Action>(RecentLocations)
-nmap <leader>rp <Action>(ManageRecentProjects)
-nmap <leader>sh <Action>(LocalHistory.ShowHistory)
-nmap <leader>sf <Action>(ShowFilePath)
-nmap <leader>si <Action>(SelectIn)
-nmap <leader>fp <Action>(FindInPath)
-nmap <leader>rp <Action>(ReplaceInPath)
-nmap <leader>sw <Action>($SearchWeb)
+" nmap <leader>of <Action>(OpenFile)
+" nmap <leader>yp <Action>(CopyAbsolutePath)
+" nmap <leader>rf <Action>(RecentFiles)
+" nmap <leader>rl <Action>(RecentLocations)
+" nmap <leader>rp <Action>(ManageRecentProjects)
+" nmap <leader>sh <Action>(LocalHistory.ShowHistory)
+" nmap <leader>sf <Action>(ShowFilePath)
+" nmap <leader>si <Action>(SelectIn)
+" nmap <leader>fp <Action>(FindInPath)
+" nmap <leader>rp <Action>(ReplaceInPath)
+" nmap <leader>sw <Action>($SearchWeb)
 
 " tag
 nmap <leader>fu <Action>(FindUsages)
@@ -112,8 +113,6 @@ nmap <leader>qd <Action>(QuickDefinition)
 nmap <leader>qD <Action>(QuickTypeDefinition)
 
 " code
-map <leader>c <Action>(CommentByLineComment)
-map <leader>C <Action>(CommentByBlockComment)
 nmap <leader>qf <Action>(ShowIntentionActions)
 nmap <leader>se <Action>(ShowErrorDescription)
 nmap <leader>om <Action>(OverrideMethods)
@@ -177,7 +176,6 @@ nmap [c <Action>(JumpToLastChange)
 nmap ]c <Action>(JumpToNextChange)
 
 " [s]earch actions (telescope equivalents)
-nmap <leader>a <Action>(GotoAction)
 nmap <leader>sk <Action>(GotoAction)
 nmap <leader>sf <Action>(GotoFile)
 nmap <leader>st <Action>(TextSearchAction)
@@ -207,8 +205,10 @@ vmap gc <Action>(CommentByLineComment)
 " nmap <leader>tc <Action>(Terminal.OpenInTerminal)
 
 " bookmark
+
 nmap mm <Action>(ToggleBookmark)
 nmap ms <Action>(ShowBookmarks)
+nmap <C-e> <Action>(ShowBookmarks)
 
 " todo
 " nmap <leader>to <Action>(ActivateTODOToolWindow)
