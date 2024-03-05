@@ -197,18 +197,25 @@ nmap <leader>ws <Action>(GotoSymbol)
 
 nmap K <Action>(ShowHoverInfo)
 
-nmap gcc <Action>(CommentByLineComment)
-vmap gc <Action>(CommentByLineComment)
-
 " terminal
 " nmap <leader>tt <Action>(ActivateTerminalToolWindow)
 " nmap <leader>tc <Action>(Terminal.OpenInTerminal)
 
 " bookmark
-
-nmap mm <Action>(ToggleBookmark)
+nmap <leader>a <Action>(ToggleBookmark)
 nmap ms <Action>(ShowBookmarks)
 nmap <C-e> <Action>(ShowBookmarks)
+
+nmap mn <Action>(ToggleBookmarkN)
+nmap me <Action>(ToggleBookmarkE)
+nmap mi <Action>(ToggleBookmarkI)
+nmap mo <Action>(ToggleBookmarkO)
+
+nmap <leader>n <Action>(GotoBookmarkN)
+nmap <leader>e <Action>(GotoBookmarkE)
+nmap <leader>i <Action>(GotoBookmarkI)
+nmap <leader>o <Action>(GotoBookmarkO)
+
 
 " todo
 " nmap <leader>to <Action>(ActivateTODOToolWindow)
@@ -228,6 +235,15 @@ nmap <leader>v <Action>(VcsGroups)
 " open IdeaVim settings
 nmap \\v <Action>(VimActions)
 
+" continuous shift
+xnoremap < <gv
+xnoremap > >gv
+
+" alias
+nmap <C-a> ggVG"+y
+
+
+"### PLUGINS ###
 " text-object (bundle plugin)
 set vim-paragraph-motion
 set textobj-indent
@@ -254,9 +270,12 @@ nmap <leader>ss <Action>(osmedile.intellij.stringmanip.PopupChoiceAction)
 " code screenshot (required idea plugin: Code Screenshots)
 nmap <leader>cs <Action>(one.util.ideaplugin.screenshoter.CopyImageAction)
 
-" surround (bundle plugin)
+" tpope/surround (bundle plugin)
 " usage: https://github.com/tpope/vim-surround
 set surround
+
+" tpope/vim-commentary (bundle plugin)
+set commentary
 
 " exchange (bundle plugin)
 " usage: https://github.com/tommcdo/vim-exchange
@@ -266,15 +285,10 @@ set exchange
 set NERDTree
 nmap <leader>t :NERDTree<CR>
 
-
+" vim-which-key (required idea plugin: xxx)
+set which-key
 
 " replace with register (bundle plugin)
 " usage: https://github.com/vim-scripts/ReplaceWithRegister
 set ReplaceWithRegister
 
-" continuous shift
-xnoremap < <gv
-xnoremap > >gv
-
-" alias
-nmap <C-a> ggVG"+y
