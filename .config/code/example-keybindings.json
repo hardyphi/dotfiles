@@ -1,0 +1,18 @@
+[
+    {
+        "key": "Escape",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    },
+    { 
+        "key": "ctrl+y",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus" 
+    },
+    { 
+        "key": "ctrl+e",                
+        "command": "vscode-neovim.send",
+        "args": "<C-e>",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.e && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'" 
+    }
+]

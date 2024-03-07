@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "gruvboxMaterial.darkWorkbench": "high-contrast",
+    "editor.guides.bracketPairs": "active",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 10,
+    "editor.rulers": [80, 120],
+    "editor.stickyScroll.enabled": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.revealIfOpen": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimInitVimPaths.win32": "%HOMEDRIVE%\\.config\\code\\init.lua"
+}
